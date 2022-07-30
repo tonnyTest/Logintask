@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 100%;
+}
+
+.login-wall {
+    display: flex;
+    align-items: initial;
+    justify-content: space-evenly;
+}
+.login-img {
+    width: 48%;
+}
+.login-content {
+    width: 32%;
+    text-align: left;
+}
+.title {
+    text-align: center;
+}
+.title h3 {
+    font-size: 28px;
+    font-weight: 800;
+    margin: 0;
+    color: #2a225e;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+.sub-title h5 {
+    font-size: 12px;
+    color: #00000075;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 60px;
+}
+a.btn-forget {
+    color: #ec411a;
+}
+label.form-title {
+    font-size: 14px;
+    color: #00000038;
+    font-weight: 500;
+}
+.form-control {
+    border: none;
+    height: 30px;
+    padding: 0;
+    border-bottom: 2px solid orange;
+    border-radius: 0;
+    margin-bottom: 25px;
+    border-top: 0;
+    box-shadow: none;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #eb411c;
+    border-color: #ea421b;
+    width: 100%;
+    margin-top: 20px;
+    transition: all 0.4s ease-in-out;
+}
+p.val-cust {
+    margin: 0;
+    font-size: 12px;
+    color: #00000094;
+}
+.form-check-input {
+    margin: 0 !important;
+    border: none;
+}
+input#exampleInputPassword1 {
+    margin-bottom: 10px;
+}
+.login-wrap {
+    margin: 60px 0;
+}
