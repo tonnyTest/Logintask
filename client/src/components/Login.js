@@ -13,8 +13,22 @@ const Login = () => {
     const [confirmPassword, setConfirmPassword] = useState('');
     // const [errMsg, setErrMsg] = useState('');
 
+
+    // var input = document.querySelector("#phone");
+    // window.intlTelInput(input, {
+    // separateDialCode: true
+    // });
     const submit = (e) => {
         e.preventDefault(e);
+
+        if (!contact.length == 10 ) {
+            alert("");
+        }
+        else{
+            alert("Mobile numbers should be 10 digits");
+        }
+       
+
         //for password 
         if (password) {
             const uppercaseRegExp = /(?=.*?[A-Z])/;
@@ -47,8 +61,12 @@ const Login = () => {
             
         }
 
+        
 
     }
+
+
+
 
 
 
@@ -85,6 +103,9 @@ const Login = () => {
                                         </div>
                                         <div className="form-group col-md-6">
                                             <label className='form-title'>Mobile Number</label>
+                                            {/* <input name="phone" className="form-control" type="text" id="phone" 
+                                            onChange={(e) => setContact(e.target.value)} value={contact} />  */}
+
                                             <input type="text" className="form-control"
                                                 onChange={(e) => setContact(e.target.value)} value={contact}
                                                 id="exampleInputPassword1" />
@@ -96,10 +117,12 @@ const Login = () => {
                                             onChange={(e) => setPassword(e.target.value)} value={password}
                                             id="exampleInputPassword1" />
                                         <div className='valid-check'>
-                                            <p className='val-cust'><input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />contains atleast 8 characters.</p>
-                                            <p className='val-cust'><input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />contains both lowercase and uppercase letters.</p>
-                                            <p className='val-cust'><input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />contain atleast one number(0-9) or a symbol.</p>
-                                            <p className='val-cust'><input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />does not contain your email address.</p>
+                                            <ul>
+                                                <li className='val-cust'><i class="fa-solid fa-check"></i><p>contains atleast 8 characters.</p></li>
+                                                <li className='val-cust'><i class="fa-solid fa-check"></i><p>contains both lowercase and uppercase letters.</p></li>
+                                                <li className='val-cust'><i class="fa-solid fa-check"></i><p>contain atleast one number(0-9) or a symbol.</p></li>
+                                                <li className='val-cust'><i class="fa-solid fa-check"></i><p>does not contain your email address.</p></li>
+                                            </ul>
                                         </div>
                                     </div>
                                     <div className="form-group">

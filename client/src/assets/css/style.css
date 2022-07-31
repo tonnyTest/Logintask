@@ -5,7 +5,9 @@
 img{
     max-width: 100%;
 }
-
+li{
+    list-style-type: none;
+}
 .login-wall {
     display: flex;
     align-items: initial;
@@ -62,10 +64,8 @@ label.form-title {
     margin-top: 20px;
     transition: all 0.4s ease-in-out;
 }
-p.val-cust {
+.val-cust p {
     margin: 0;
-    font-size: 12px;
-    color: #00000094;
 }
 .form-check-input {
     margin: 0 !important;
@@ -76,4 +76,19 @@ input#exampleInputPassword1 {
 }
 .login-wrap {
     margin: 60px 0;
+}
+li.val-cust {
+    display: flex;
+    margin: 0;
+    font-size: 12px;
+    align-items: baseline;
+    color: #00000094;
+}
+i.fa-solid.fa-check {
+    margin-right: 5px;
+    color: #12d312;
+}
+i.fa-solid.fa-xmark {
+    margin-right: 8px;
+    color: red;
 }
